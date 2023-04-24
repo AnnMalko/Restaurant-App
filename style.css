@@ -1,0 +1,171 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1670389135500-051327c99f13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    background-color: rgba(19, 23, 29, 0.7);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 500px;
+    border-radius: 70px 0;
+    color: #fff;
+    margin-top: 200px;
+    box-shadow: 10px 3px 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Righteous';
+    margin: 20px;
+    padding: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Righteous';
+    color: rgba(240, 231, 134, 0.938);
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+i {
+    color: rgba(240, 231, 134, 0.938);
+}
+
+input {
+    font-family: 'Righteous';
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+}
+
+#tip {
+    font-family: 'Righteous';
+    display: none;
+    color: #051336;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+span {
+    font-size: 18px;
+}
+
+#showTotalAmountToPay {
+    display: flex;
+    justify-content: center;
+}
+
+#billSplit,
+#totalTip,
+#totalAmount {
+    text-align: center;
+    font-family: 'Righteous';
+    background-color: rgba(240, 231, 134, 0.938);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    color: #051336;
+    margin-top: 0;
+}
+
+#dividedBill,
+#dividedTip,
+#billAndTip {
+    color: #051336;
+}
+
+#addTip {
+    background-color: rgba(240, 231, 134, 0.938);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Righteous';
+    color: #051336;
+    font-size: 18px;
+}
+
+#btn {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Righteous';
+    color: #051336;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.purpose {
+    font-family: 'Righteous';
+    font-size: 12px;
+}
+
+/* @media all and (max-width:800px) {
+    #container {
+        width: 600px;
+        height: 500px;
+    }
+} */
+
+@media all and (max-width:500px) {
+    #container {
+        width: 360px;
+        height: 800px;
+        flex-wrap: nowrap;
+        margin-top: 50px;
+    }
+
+    #showTotalAmountToPay {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #center {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        margin: 0;
+        padding: 10px;
+        
+    }
+
+    #billSplit,
+    #totalTip,
+    #totalAmount {
+        width: 50%;
+        margin: 20px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 60%;
+        margin: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
